@@ -13,7 +13,7 @@ body {
   z-index: 1000;
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between; /* Menempatkan logo di kiri dan hamburger di kanan */
   padding: 10px 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
 }
@@ -69,19 +69,18 @@ body {
 /* Style untuk tampilan mobile */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+    flex-direction: row; /* Membuat navbar tetap dalam satu baris */
+    justify-content: space-between; /* Logo di kiri, hamburger di kanan */
+    padding: 10px 20px;
   }
 
   .logo {
-    order: 1;
-    margin-bottom: 10px;
+    order: 1; /* Logo tetap di sisi kiri */
   }
 
+  /* Menyembunyikan menu di mobile */
   .navbar ul {
-    display: none; /* Menyembunyikan menu */
+    display: none;
     flex-direction: column;
     gap: 10px;
     align-items: center;

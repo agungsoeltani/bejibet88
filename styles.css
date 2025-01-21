@@ -133,6 +133,7 @@ body {
     color: white;
     font-size: 30px;
   }
+}
   /* Style untuk tampilan mobile */
 @media (max-width: 768px) {
   .navbar {

@@ -88,51 +88,15 @@ body {
 .hyperlink:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
-
-/* Style untuk tampilan mobile */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-  }
-
-  .logo {
-    order: 1;
-    margin-bottom: 10px;
-  }
-
-  .navbar ul {
-    display: none; /* Menyembunyikan menu */
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    width: 100%;
-    padding: 0;
-  }
-
-  .navbar a {
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-  }
-
-  /* Menampilkan menu ketika hamburger diklik */
-  .navbar.active ul {
-    display: flex;
-  }
-
-  /* Hamburger icon */
-  .hamburger {
-    display: block;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    padding: 10px;
-    color: white;
-    font-size: 30px;
-  }
+.footer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Warna latar belakang footer */
+  color: white;
+  text-align: center;
+  padding: 10px 0; /* Padding atas dan bawah */
+  position: relative; /* Untuk menjaga posisi tetap di bawah */
+  font-size: 14px; /* Ukuran font default */
+  font-family: Arial, sans-serif;
 }
   /* Style untuk tampilan mobile */
 @media (max-width: 768px) {
@@ -162,5 +126,9 @@ body {
   }
   .hyperlink:hover {
     background-color: rgba(255, 255, 255, 0.3);
+  }
+    .footer {
+    font-size: 12px; /* Ukuran font lebih kecil di tampilan mobile */
+    padding: 15px 0; /* Tambahan padding di tampilan kecil */
   }
 }

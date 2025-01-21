@@ -75,6 +75,7 @@ body {
 .link-container {
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .hyperlink {
@@ -84,7 +85,7 @@ body {
   color: white;
   text-decoration: none;
   background-color: #4b1010;
-  padding: 10px 20px;
+  padding: 10px 40px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
@@ -99,15 +100,13 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   text-align: center;
-  padding: 30px 0;
+  padding: 15px 0;
   font-size: 14px;
-  font-family: Arial, sans-serif;
 }
 
 /* Responsive Styles for Mobile */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10px;
@@ -119,6 +118,7 @@ body {
   }
 
   .navbar ul {
+    display: none;
     flex-direction: column; /* Stack menu items vertically */
     gap: 10px;
     align-items: center;
@@ -132,10 +132,6 @@ body {
 
   .hyperlink {
     font-size: 4vw; /* Dynamic font size for smaller screens */
-  }
-
-  .footer {
-    font-size: 12px; /* Smaller font size for footer */
-    padding: 15px 0;
+    padding-bottom: 10px;
   }
 }

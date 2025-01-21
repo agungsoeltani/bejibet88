@@ -1,4 +1,4 @@
-/* Body Styles */
+/* Global Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -59,7 +59,7 @@ body {
   width: 80%;
   max-width: 1000px;
   overflow: hidden;
-  margin-top: 100px; /* Margin to avoid overlapping with navbar */
+  margin-top: 100px; /* Avoid overlapping with navbar */
   border: 5px solid #ffffff;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -100,12 +100,11 @@ body {
   color: white;
   text-align: center;
   padding: 30px 0;
-  position: relative;
   font-size: 14px;
   font-family: Arial, sans-serif;
 }
 
-/* Responsive Styles */
+/* Responsive Styles for Mobile */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -115,12 +114,12 @@ body {
   }
 
   .logo {
-    order: 1;
+    order: 1; /* Ensure logo is on top */
     margin-bottom: 10px;
   }
 
   .navbar ul {
-    flex-direction: column;
+    flex-direction: column; /* Stack menu items vertically */
     gap: 10px;
     align-items: center;
   }
@@ -128,15 +127,15 @@ body {
   .navbar a {
     padding: 10px;
     text-align: center;
-    width: 100%;
+    width: 100%; /* Full-width menu links */
   }
 
   .hyperlink {
-    font-size: 4vw; /* Dynamic font size based on viewport width */
+    font-size: 4vw; /* Dynamic font size for smaller screens */
   }
 
   .footer {
-    font-size: 12px;
+    font-size: 12px; /* Smaller font size for footer */
     padding: 15px 0;
   }
 }

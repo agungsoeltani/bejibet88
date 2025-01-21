@@ -7,10 +7,12 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">
       <img src="images/bejibet.png" alt="Bejibet Logo">
     </div>
+    <button class="hamburger" id="hamburger">&#9776;</button>
     <ul>
       <li><a href="#home">BEJIBET88</a></li>
       <li><a href="#about">SLOT GACOR</a></li>
@@ -28,5 +30,15 @@
       </iframe>
     </main>
   </div>
+
+  <script>
+    // Mengaktifkan dan menonaktifkan tampilan menu saat hamburger diklik
+    const hamburger = document.getElementById("hamburger");
+    const navbar = document.querySelector(".navbar");
+
+    hamburger.addEventListener("click", function() {
+      navbar.classList.toggle("active");
+    });
+  </script>
 </body>
 </html>

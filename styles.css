@@ -3,6 +3,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: #4b1010;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .navbar {
@@ -13,17 +16,19 @@ body {
   z-index: 1000;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Menempatkan logo di kiri dan hamburger di kanan */
+  justify-content: space-between; 
   padding: 10px 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
 }
 
+/* Logo di navbar */
 .logo img {
   max-height: 50px; 
   height: auto;
   display: block;
 }
 
+/* Menu navbar */
 .navbar ul {
   list-style: none;
   margin: 0;
@@ -60,6 +65,7 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi zoom */
 }
 
+/* Iframe */
 .responsive-iframe {
   width: 100%;
   height: 600px; /* Tinggi iframe */
@@ -69,44 +75,26 @@ body {
 /* Style untuk tampilan mobile */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: row; /* Membuat navbar tetap dalam satu baris */
-    justify-content: space-between; /* Logo di kiri, hamburger di kanan */
-    padding: 10px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
   }
 
   .logo {
-    order: 1; /* Logo tetap di sisi kiri */
+    order: 1; /* Memastikan logo berada di atas */
+    margin-bottom: 10px;
   }
 
-  /* Menyembunyikan menu di mobile */
   .navbar ul {
-    display: none;
-    flex-direction: column;
+    flex-direction: column; /* Ubah menu menjadi kolom */
     gap: 10px;
     align-items: center;
-    width: 100%;
-    padding: 0;
   }
 
   .navbar a {
     padding: 10px;
     text-align: center;
-    width: 100%;
-  }
-
-  /* Menampilkan menu ketika hamburger diklik */
-  .navbar.active ul {
-    display: flex;
-  }
-
-  /* Hamburger icon */
-  .hamburger {
-    display: block;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    padding: 10px;
-    color: white;
-    font-size: 30px;
+    width: 100%; /* Menu memenuhi lebar */
   }
 }

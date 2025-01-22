@@ -4,62 +4,162 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BEJIBET88</title>
-  <link rel="stylesheet" href="styles.css">
   <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #161515;
+      color: #fff;
+    }
+
+    /* Navbar Styles */
+    .navbar {
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo img {
+      max-height: 50px;
+      height: auto;
+      display: block;
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 5px;
+    }
+
+    .navbar li {
+      display: inline;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    /* Game Container Styles */
+    .game-container {
+      width: 80%;
+      max-width: 1000px;
+      margin: 100px auto;
+      border: 5px solid #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 100%;
+      height: 60vh;
+      border: none;
+    }
+
+    /* Link Container Styles */
+    .link-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .hyperlink {
+      font-size: 30px;
+      font-weight: bold;
+      font-family: sans-serif;
+      color: white;
+      text-decoration: none;
+      background-color: #4b1010;
+      padding: 10px 40px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .hyperlink:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    /* Footer Styles */
+    .footer {
+      width: 100%;
+      background-color: #161515;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 14px;
+    }
+
     /* FBI Overlay Styles */
     .fbi-overlay {
-        position: fixed; /* Tetap di atas layar */
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.8); /* Latar belakang gelap semi-transparan */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 9999; /* Prioritas tertinggi */
+      position: fixed; /* Tetap di atas layar */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.9); /* Latar belakang gelap semi-transparan */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999; /* Menutupi semua elemen lainnya */
     }
 
     .fbi-container {
-        text-align: center;
-        background-color: #222; /* Latar belakang container */
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-        max-width: 600px;
-        width: 100%;
-        color: #fff;
+      text-align: center;
+      background-color: #222; /* Latar belakang container */
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      max-width: 600px;
+      width: 100%;
+      color: #fff;
     }
 
     .fbi-container .header {
-        margin-bottom: 20px;
+      margin-bottom: 20px;
     }
 
     .fbi-container .header .logo {
-        width: 100px;
-        margin-bottom: 15px;
+      width: 100px;
+      margin-bottom: 15px;
     }
 
     .fbi-container .header h1 {
-        font-size: 2rem;
-        color: #ff4747;
-        margin: 0;
+      font-size: 2rem;
+      color: #ff4747;
+      margin: 0;
     }
 
     .fbi-container .content {
-        font-size: 1rem;
-        line-height: 1.5;
-        margin-top: 10px;
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-top: 10px;
     }
 
     .fbi-container .content p {
-        margin: 10px 0;
+      margin: 10px 0;
     }
 
     .fbi-container .content .warning {
-        color: #ff4747;
-        font-weight: bold;
-        margin-top: 15px;
+      color: #ff4747;
+      font-weight: bold;
+      margin-top: 15px;
     }
   </style>
 </head>
@@ -97,7 +197,6 @@
     <main>
       <iframe 
         src="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?lang=IDN&cur=IDR&gameSymbol=vs20olympgate&jurisdiction=99" 
-        style="width: 100%; height: 60vh; border: none;" 
         allow="autoplay; encrypted-media; fullscreen; clipboard-write"
         sandbox="allow-same-origin allow-scripts allow-popups">
       </iframe>

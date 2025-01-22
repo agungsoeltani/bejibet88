@@ -104,7 +104,93 @@ body {
     font-size: 14px;
     position: ;
   }
-  
+/* CSS untuk class fbi-container */
+.fbi-container {
+    text-align: center;
+    background-color: #222; /* Latar belakang container */
+    padding: 30px; /* Jarak dalam container */
+    border-radius: 10px; /* Membuat sudut melengkung */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Bayangan container */
+    max-width: 600px; /* Lebar maksimal container */
+    width: 100%; /* Lebar penuh */
+    color: #fff; /* Warna teks default */
+    margin: auto; /* Agar container terpusat */
+}
+
+.fbi-container .header {
+    margin-bottom: 20px; /* Jarak bawah header */
+}
+
+.fbi-container .header .logo {
+    width: 100px; /* Ukuran logo */
+    margin-bottom: 15px; /* Jarak bawah logo */
+}
+
+.fbi-container .header h1 {
+    font-size: 2rem; /* Ukuran font untuk judul */
+    color: #ff4747; /* Warna merah pada judul */
+    margin: 0; /* Hilangkan margin bawaan */
+}
+
+.fbi-container .content {
+    font-size: 1rem; /* Ukuran font teks konten */
+    line-height: 1.5; /* Jarak antar baris */
+    margin-top: 10px; /* Jarak atas konten */
+}
+
+.fbi-container .content p {
+    margin: 10px 0; /* Margin atas dan bawah paragraf */
+}
+
+.fbi-container .content .warning {
+    color: #ff4747; /* Warna merah untuk peringatan */
+    font-weight: bold; /* Teks tebal */
+    margin-top: 15px; /* Jarak atas peringatan */
+}
+/* CSS untuk class fbi-container */
+.fbi-container {
+    text-align: center;
+    background-color: #222; /* Latar belakang container */
+    padding: 30px; /* Jarak dalam container */
+    border-radius: 10px; /* Membuat sudut melengkung */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Bayangan container */
+    max-width: 600px; /* Lebar maksimal container */
+    width: 100%; /* Lebar penuh */
+    color: #fff; /* Warna teks default */
+    margin: auto; /* Agar container terpusat */
+}
+
+.fbi-container .header {
+    margin-bottom: 20px; /* Jarak bawah header */
+}
+
+.fbi-container .header .logo {
+    width: 100px; /* Ukuran logo */
+    margin-bottom: 15px; /* Jarak bawah logo */
+}
+
+.fbi-container .header h1 {
+    font-size: 2rem; /* Ukuran font untuk judul */
+    color: #ff4747; /* Warna merah pada judul */
+    margin: 0; /* Hilangkan margin bawaan */
+}
+
+.fbi-container .content {
+    font-size: 1rem; /* Ukuran font teks konten */
+    line-height: 1.5; /* Jarak antar baris */
+    margin-top: 10px; /* Jarak atas konten */
+}
+
+.fbi-container .content p {
+    margin: 10px 0; /* Margin atas dan bawah paragraf */
+}
+
+.fbi-container .content .warning {
+    color: #ff4747; /* Warna merah untuk peringatan */
+    font-weight: bold; /* Teks tebal */
+    margin-top: 15px; /* Jarak atas peringatan */
+}
+
   /* Responsive Styles for Mobile */
   @media (max-width: 768px) {
     .navbar {

@@ -161,6 +161,36 @@
       font-weight: bold;
       margin-top: 15px;
     }
+    @media (max-width: 768px) {
+    .navbar {
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .logo {
+      order: 1; /* Ensure logo is on top */
+      margin-bottom: 10px;
+    }
+  
+    .navbar ul {
+      display: none;
+      flex-direction: column; /* Stack menu items vertically */
+      gap: 10px;
+      align-items: center;
+    }
+  
+    .navbar a {
+      padding: 10px;
+      text-align: center;
+      width: 100%; /* Full-width menu links */
+    }
+  
+    .hyperlink {
+      font-size: 4vw; /* Dynamic font size for smaller screens */
+      padding-bottom: 10px;
+    }
+  }
   </style>
 </head>
 <body>
